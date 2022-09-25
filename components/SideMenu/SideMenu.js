@@ -14,7 +14,7 @@ import MenuList from '../../data/menu.json';
 import styles from './SideMenu.module.css'
 const drawerWidth = 220;
 
-const sideMenu = () => {
+const SideMenu = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const handleDrawerToggle = () => {
@@ -81,4 +81,4 @@ const sideMenu = () => {
     );
 }
 
-export default sideMenu
+export default SideMenu

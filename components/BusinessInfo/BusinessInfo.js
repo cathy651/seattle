@@ -24,7 +24,7 @@ const BusinessInfo = (props) => {
         >
         {/* Increase the priority of the hero background image */}
       
-        {<Image src={BackGroundImg} style={{ display: 'none' }} layout='fill' />}
+        {<Image src={BackGroundImg} alt="pic" style={{ display: 'none' }} layout='fill' />}
         <Box
         sx={{
             position: 'absolute',
