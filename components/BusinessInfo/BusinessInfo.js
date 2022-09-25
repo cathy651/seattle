@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
-
+import Image from 'next/image'
+import BackGroundImg from '../../public/pexels-olya.jpg'
 const BusinessInfo = (props) => {
     const { post } = props;
     return (
@@ -19,11 +19,12 @@ const BusinessInfo = (props) => {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
-            backgroundImage: `url(${post.image})`,
+            backgroundImage: {BackGroundImg},
             }}
         >
         {/* Increase the priority of the hero background image */}
-        {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
+      
+        {<Image src={BackGroundImg} style={{ display: 'none' }} layout='fill' />}
         <Box
         sx={{
             position: 'absolute',

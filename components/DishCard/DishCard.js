@@ -16,11 +16,10 @@ const DishCard = ({food}) => {
             <CardActionArea>
               <iframe 
                 title="Fruit Tart" 
-                frameborder="0" 
-                allowfullscreen mozallowfullscreen="true" 
+                frameBorder="0" 
+                allowFullScreen mozallowfullscreen="true" 
                 webkitallowfullscreen="true" 
                 allow="autoplay; fullscreen; xr-spatial-tracking" 
-                xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share 
                 src={food.image}> 
               </iframe>
               <CardContent>

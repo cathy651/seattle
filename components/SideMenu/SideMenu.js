@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
@@ -16,25 +16,21 @@ const drawerWidth = 220;
 
 const sideMenu = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
-    const [menu, setMenu] = useState([]);
 
     const handleDrawerToggle = () => {
       setMobileOpen(!mobileOpen);
     };
-    
-    MenuList.menu.forEach((item) => {
-        menu.push(item.type);
-    })
+   console.log(MenuList);
     const drawer = (
       <div>
         <Toolbar />
         <p className={styles.menu}>Food Galary</p>
         <Divider />
         <List>
-          {menu.map((text, index) => (
-            <ListItem key={text} disablePadding>
+          {MenuList.menu.map((item, index) => (
+            <ListItem key={index} disablePadding>
               <ListItemButton>
-                <ListItemText primary={text} />
+                <ListItemText primary={item.type} />
               </ListItemButton>
             </ListItem>
           ))}
