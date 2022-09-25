@@ -47,7 +47,10 @@ const BusinessInfo = (props) => {
             Count memories, not calories.
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
-            "People who love to eat are always the best people."
+            People who love to eat are always the best.
+            </Typography>
+            <Typography variant="h5" color="inherit" paragraph>
+            Record life with 3D foods.
             </Typography>
            
             </Box>
