@@ -20,7 +20,7 @@ const sideMenu = () => {
     const handleDrawerToggle = () => {
       setMobileOpen(!mobileOpen);
     };
-   console.log(MenuList);
+
     const drawer = (
       <div>
         <Toolbar />
