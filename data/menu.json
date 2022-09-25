@@ -1,0 +1,16 @@
+{
+    "menu" : [
+        {
+            "id": 1,
+            "type" : "Desserts"
+        },
+        {
+            "id": 2,
+            "type" : "Sandwiches and Pizzas"
+        },
+        {
+            "id": 3,
+            "type" : "Big Box Meals"
+        }
+    ]
+}

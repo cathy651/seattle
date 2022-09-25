@@ -1,0 +1,10 @@
+.cartBox {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+.cartItem {
+    display: flex;
+    flex-direction: row;
+    
+}
