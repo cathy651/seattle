@@ -18,7 +18,6 @@ const businessInfo = {
 };
 
 const LandingPage = () => {
-  
   return (
     <div className={styles.wapper}>
       <GlobalState>

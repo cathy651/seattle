@@ -1,8 +1,9 @@
 .singleCard{
-    width: 350px;
-    height: 360px;
+    width: 300px;
+    height: 470px;
     margin: 20px;
 }
 .foodTitle {
     height:50px;
+    margin: 0;
 }

@@ -6,22 +6,26 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import styles from './DishCard.module.css'
 import CartContext from '../../context/CartContext'
+import Image from 'next/image';
 
 const DishCard = ({food}) => {
 
     return (
       <CartContext.Consumer>
         {context => (
-          <Card className={styles.singleCard} sx={{ maxWidth: 300 }}>
-            <CardActionArea>
-              <iframe 
+          <Card className={styles.singleCard} sx={{ maxWidth: 500 }}>
+            <CardActionArea >
+              <iframe
                 title="Fruit Tart" 
                 frameBorder="0" 
                 allowFullScreen mozallowfullscreen="true" 
                 webkitallowfullscreen="true" 
                 allow="autoplay; fullscreen; xr-spatial-tracking" 
-                src={food.image}> 
+                width={300} height={290}
+                src={food.image}
+              > 
               </iframe>
+
               <CardContent>
                 <h2 className={styles.foodTitle}>
                   {food.title}
