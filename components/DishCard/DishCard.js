@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import styles from './DishCard.module.css'
+import styles from './DishCard.module.scss'
 import CartContext from '../../context/CartContext'
 import Image from 'next/image';
 
@@ -30,9 +30,7 @@ const DishCard = ({food}) => {
                 <h2 className={styles.foodTitle}>
                   {food.title}
                 </h2>
-                <p>
-                  $ {food.price}
-                </p>
+               
               </CardContent>
             </CardActionArea>
             <CardActions>

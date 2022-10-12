@@ -12,7 +12,7 @@ const ShoppingCart = (props) => {
           {context.cart.map(cartItem => (
             <li key={cartItem.id}>
               <div>
-                <strong>{cartItem.title}</strong> - ${cartItem.price} (
+                <strong>{cartItem.title}</strong> -  (
                 {cartItem.quantity})
               </div>
               <div>

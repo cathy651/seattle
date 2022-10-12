@@ -1,39 +1,22 @@
 import React from 'react'
-import AllDishes from '../AllDishes/AllDishes'
-import BusinessInfo from '../BusinessInfo/BusinessInfo'
-import SideMenu from '../SideMenu/SideMenu'
-import ShoppingCart from '../ShoppingCart/ShoppingCart'
-import styles from './LandingPage.module.css'
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Link from "next/link"
 import GlobalState from '../../context/GlobalState'
-
-const businessInfo = {
-  title: 'Title of a longer featured blog post',
-  description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: 'https://source.unsplash.com/random',
-  imageText: 'main image description',
-  linkText: 'Continue reading…',
-};
+import styles from './LandingPage.module.scss'
 
 const LandingPage = () => {
   return (
     <div className={styles.wapper}>
-      <GlobalState>
-       <Container maxWidth="xl">
-            <Grid container spacing={2}>
-              <Grid item xs={2}>
-                <SideMenu />
-              </Grid>
-              <Grid item xs={10}>
-                <BusinessInfo post={businessInfo} />
-                <ShoppingCart />
-                <AllDishes />
-              </Grid>
-            </Grid>
-        </Container>
-      </GlobalState>
+       <GlobalState>
+         <div className={styles.text}>
+            <h2>Welcome</h2>
+            <p>Enjoy your food, enjoy your life.</p>
+            <button type="button" className={styles.button}>
+              <Link href={"/food-galary"}>
+              Click me
+              </Link>
+            </button>
+         </div>  
+       </GlobalState>
     </div>
   )
 }

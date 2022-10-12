@@ -1,5 +1,4 @@
 import React from 'react'
-
 import PropTypes from 'prop-types';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -7,6 +6,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Image from 'next/image'
 import BackGroundImg from '../../public/pexels-olya.jpg'
+
 const BusinessInfo = (props) => {
     const { post } = props;
     return (
@@ -47,9 +47,7 @@ const BusinessInfo = (props) => {
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
             Count memories, not calories.
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
-            People who love to eat are always the best.
-            </Typography>
+        
             <Typography variant="h5" color="inherit" paragraph>
             Record life with 3D foods.
             </Typography>

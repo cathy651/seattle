@@ -11,7 +11,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from '@mui/material/IconButton';
 import MenuList from '../../data/menu.json';
-import styles from './SideMenu.module.css'
+import styles from './SideMenu.module.scss'
 const drawerWidth = 220;
 
 const SideMenu = () => {
